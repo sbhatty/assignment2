@@ -1,0 +1,64 @@
+Date tutorials completed: 10/20/23
+Date Github account created: 9/23/23
+
+#1: 
+
+PS C:\Users\Computer\Documents\GitHub\assignment2> git commit -m " added docs folder and status.txt"
+[master db5fdf8]  added docs folder and status.txt
+ 1 file changed, 2 insertions(+)
+PS C:\Users\Computer\Documents\GitHub\assignment2> git push
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sbhatty/assignment2.git
+   8512088..db5fdf8  master -> master
+
+#2:
+PS C:\Users\Computer\Documents\GitHub\assignment2> git rev-list --count HEAD
+9
+
+#3: 
+PS C:\Users\Computer\Documents\GitHub\assignment2> git log -n 1 --format="%ad" -- README.md
+Fri Oct 20 23:32:45 2023 -0400
+
+#4:
+- Allow for parallel development
+- Provide a way to isolate experimenta/unstable changes from main codebase
+
+#5:
+git log shows history of commits like the commit messages, authros, and timestamps
+git status shows the state of the directory such as modified files, untracked files, and which branch you're on
+
+#6:
+PS C:\Users\Computer\Documents\GitHub\assignment2> git log --oneline -- Vehicle.h
+03106e9 -> Declared the trivial destructors for all classes -> Fully formatted toString methods for all classes -> Added test cases in the main method for testing the implementations -> Added validation on value for engine sizes in the  Car class
+f9cd890 -> Partial implementation of PoweredVehicle and Car -> Definition of virtual functions
+f9c24b0 Refactored Vehicle class to separate definition and declarations Added mileageEstimate abstract method to Vehicle Implemented the Bicycle class
+4f6c88c Base Vehicle class created
+
+#7: 
+PS C:\Users\Computer\Documents\GitHub\assignment2> git log --grep="file"
+commit f4975e5d56ff331762b318bfd12c5236e0299f25 (upstream/master, upstream/HEAD)
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+#8:
+- Inheritance: means by which a class can share its data (attributes or properties) and behaviour (methods) with a subclass
+- Encapsulation: A way to restrict the direct access to some components of an object,
+                 so users cannot access state values for all of the variables of a particular object
+- Polymorphism: The ability of a programming language to interpret objects in different ways based on their class or data type
+
+#9:
+The main difference between the "Dictator and Lieutenants" workflow and the "Integration Manager" workflow is in how they handle 
+decision-making and integration. In the "Dictator and Lieutenants" model, there is a hierarchical structure with a central authority 
+(the Dictator) and trusted teams (Lieutenants) responsible for specific areas, making decisions and merging changes.
+In contrast, the "Integration Manager" model relies on a single Integration Manager who reviews and integrates contributions from
+contributors with direct write access limited to the Integration Manager, simplifying the decision-making process.
+
+#10:
+ By establishing a structured and organized hierarchy that can effectively manage the complexity of a large-scale project. 
+ This approach allows for more fine-grained control and specialization.
